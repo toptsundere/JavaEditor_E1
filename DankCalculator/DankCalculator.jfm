@@ -1,8 +1,8 @@
-object JFrameTest: TFGUIForm
+object DankCalculator: TFGUIForm
   Left = 0
   Top = 0
   BorderIcons = [biSystemMenu]
-  Caption = 'JFrameTest'
+  Caption = 'DankCalculator'
   ClientHeight = 262
   ClientWidth = 284
   Color = clBtnFace
@@ -24,14 +24,14 @@ object JFrameTest: TFGUIForm
   Background = clBtnFace
   PixelsPerInch = 96
   TextHeight = 13
-  object jTextField1: TJTextField
-    Tag = 2
-    Left = 16
-    Top = 24
-    Width = 121
-    Height = 25
+  object jNumberField1: TJNumberField
+    Tag = 21
+    Left = 120
+    Top = 16
+    Width = 65
+    Height = 49
     Cursor = crIBeam
-    Hint = 'jTextField1'
+    Hint = 'jNumberField1'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
@@ -42,12 +42,48 @@ object JFrameTest: TFGUIForm
     HorizontalAlignment = LEFT
     Editable = True
   end
-  object jButton1: TJButton
+  object jNumberField2: TJNumberField
+    Tag = 21
+    Left = 120
+    Top = 88
+    Width = 65
+    Height = 41
+    Cursor = crIBeam
+    Hint = 'jNumberField2'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = []
+    Foreground = 3355443
+    Background = clWhite
+    HorizontalAlignment = LEFT
+    Editable = True
+  end
+  object jNumberField3: TJNumberField
+    Tag = 21
+    Left = 120
+    Top = 208
+    Width = 65
+    Height = 33
+    Cursor = crIBeam
+    Hint = 'jNumberField3'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = []
+    Foreground = 3355443
+    Background = clWhite
+    HorizontalAlignment = LEFT
+    Editable = True
+  end
+  object bKalkulateee: TJButton
     Tag = 4
-    Left = 72
-    Top = 168
-    Width = 131
-    Height = 25
+    Left = 120
+    Top = 144
+    Width = 65
+    Height = 41
     Hint = 'jButton1'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -56,8 +92,8 @@ object JFrameTest: TFGUIForm
     Font.Style = [fsBold]
     Foreground = 3355443
     Background = 15658734
-    actionPerformed = 'jButton1_ActionPerformed'
-    Text = 'jButton1'
+    actionPerformed = 'bKalkulateee_ActionPerformed'
+    Text = 'Kalkulateee'
     Mnemonic = 0
     DisplayedMnemonicIndex = 0
     Selected = False
@@ -86,22 +122,27 @@ object JFrameTest: TFGUIForm
     Border.MatteBottom = 0
     Border.MatteRight = 0
   end
-  object jTextField2: TJTextField
-    Tag = 2
-    Left = 160
-    Top = 24
-    Width = 113
-    Height = 25
-    Cursor = crIBeam
-    Hint = 'jTextField2'
+  object lTotal: TJLabel
+    Tag = 1
+    Left = 16
+    Top = 208
+    Width = 91
+    Height = 33
+    Hint = 'jLabel1'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
     Font.Name = 'Dialog'
-    Font.Style = []
+    Font.Style = [fsBold]
     Foreground = 3355443
-    Background = clWhite
+    Background = clBtnFace
+    Text = 'Total'
     HorizontalAlignment = LEFT
-    Editable = False
+    VerticalAlignment = CENTER
+    HorizontalTextPosition = RIGHT
+    VerticalTextPosition = CENTER
+    IconTextGap = 4
+    DisplayedMnemonic = 0
+    DisplayedMnemonicIndex = 0
   end
 end

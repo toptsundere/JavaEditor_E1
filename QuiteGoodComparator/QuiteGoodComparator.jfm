@@ -1,8 +1,8 @@
-object JFrameTest: TFGUIForm
+object QuiteGoodComparator: TFGUIForm
   Left = 0
   Top = 0
   BorderIcons = [biSystemMenu]
-  Caption = 'JFrameTest'
+  Caption = 'QuiteGoodComparator'
   ClientHeight = 262
   ClientWidth = 284
   Color = clBtnFace
@@ -14,6 +14,7 @@ object JFrameTest: TFGUIForm
   FormStyle = fsMDIChild
   OldCreateOrder = True
   Position = poDesigned
+  ShowHint = True
   Visible = True
   OnClose = FormClose
   OnCloseQuery = FormCloseQuery
@@ -24,14 +25,14 @@ object JFrameTest: TFGUIForm
   Background = clBtnFace
   PixelsPerInch = 96
   TextHeight = 13
-  object jTextField1: TJTextField
-    Tag = 2
-    Left = 16
+  object jNumberField1: TJNumberField
+    Tag = 21
+    Left = 24
     Top = 24
-    Width = 121
+    Width = 97
     Height = 25
     Cursor = crIBeam
-    Hint = 'jTextField1'
+    Hint = 'jNumberField1'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
@@ -42,11 +43,29 @@ object JFrameTest: TFGUIForm
     HorizontalAlignment = LEFT
     Editable = True
   end
-  object jButton1: TJButton
+  object jNumberField2: TJNumberField
+    Tag = 21
+    Left = 160
+    Top = 24
+    Width = 97
+    Height = 25
+    Cursor = crIBeam
+    Hint = 'jNumberField2'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = []
+    Foreground = 3355443
+    Background = clWhite
+    HorizontalAlignment = LEFT
+    Editable = True
+  end
+  object Compare: TJButton
     Tag = 4
-    Left = 72
-    Top = 168
-    Width = 131
+    Left = 88
+    Top = 120
+    Width = 89
     Height = 25
     Hint = 'jButton1'
     Font.Charset = DEFAULT_CHARSET
@@ -56,7 +75,7 @@ object JFrameTest: TFGUIForm
     Font.Style = [fsBold]
     Foreground = 3355443
     Background = 15658734
-    actionPerformed = 'jButton1_ActionPerformed'
+    actionPerformed = 'Compare_ActionPerformed'
     Text = 'jButton1'
     Mnemonic = 0
     DisplayedMnemonicIndex = 0
@@ -86,14 +105,14 @@ object JFrameTest: TFGUIForm
     Border.MatteBottom = 0
     Border.MatteRight = 0
   end
-  object jTextField2: TJTextField
+  object jTextField1: TJTextField
     Tag = 2
-    Left = 160
+    Left = 128
     Top = 24
-    Width = 113
+    Width = 25
     Height = 25
     Cursor = crIBeam
-    Hint = 'jTextField2'
+    Hint = 'jTextField1'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12

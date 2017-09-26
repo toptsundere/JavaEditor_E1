@@ -46,7 +46,9 @@ public class JFrameTest extends JFrame {
     
     jTextField2.setEditable(false);
     cp.add(jTextField2);
-    jButton1.setBounds(72, 168, 131, 25);
+    
+    //COPY button
+    jButton1.setBounds(72, 128, 131, 25);
     jButton1.setText("don't click this");
     jButton1.setMargin(new Insets(2, 2, 2, 2));
     jButton1.addActionListener(new ActionListener() { 
@@ -56,7 +58,7 @@ public class JFrameTest extends JFrame {
     });
     cp.add(jButton1);
     
-    jButtonReset.setBounds(72, 128, 131, 25);
+    jButtonReset.setBounds(72, 180, 131, 25);
     jButtonReset.setText("reset");
     jButtonReset.setMargin(new Insets(2, 2, 2, 2));
     jButtonReset.addActionListener(new ActionListener() { 
