@@ -71,34 +71,30 @@ public class VeryGoodComparator extends JFrame {
   
   public void bCompare_ActionPerformed(ActionEvent evt) {
   
-  //Variables
   int a;
-  int b;
-  int c;
-  
   a = jNumberField1.getInt();
-  b = jNumberField2.getInt();  
-  c = jNumberField3.getInt();
   
-    // TODO hier Quelltext einfügen
-    /**if(a > b){
-      jTextField1.setText(">");
-    } if(a < b){
-      jTextField1.setText("<");
-    } if(a == b) {
-      jTextField1.setText("=");
-    }*/
+  int b;
+  b = jNumberField2.getInt();
+  
+  int c;
+  c = jNumberField3.getInt();
+    
     
     // a > b
     if(a > b){
-      int h;
-      h = jNumberField1.getInt();
       
       jNumberField1.setInt(jNumberField2.getInt());
-      jNumberField2.setInt(h);
+      jNumberField2.setInt(a);
     } if(b > c){
-      int h1;
-    }
+      
+      jNumberField2.setInt(jNumberField3.getInt());
+      jNumberField3.setInt(b);
+    } if(a > c){
+      
+      jNumberField1.setInt(jNumberField3.getInt());
+      jNumberField3.setInt(a);
+      }
       
   
      // end of bCompare_ActionPerformed
