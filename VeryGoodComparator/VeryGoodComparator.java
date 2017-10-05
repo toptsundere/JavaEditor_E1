@@ -71,6 +71,7 @@ public class VeryGoodComparator extends JFrame {
   
   public void bCompare_ActionPerformed(ActionEvent evt) {
   
+  //Deklarationen
   int a;
   a = jNumberField1.getInt();
   
@@ -91,7 +92,7 @@ public class VeryGoodComparator extends JFrame {
       jNumberField2.setInt(jNumberField3.getInt());
       jNumberField3.setInt(b);
     } if(a > c){
-      
+      //nicht gut?
       jNumberField1.setInt(jNumberField3.getInt());
       jNumberField3.setInt(a);
       }
