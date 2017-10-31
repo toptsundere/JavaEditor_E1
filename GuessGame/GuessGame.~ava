@@ -1,0 +1,47 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+/**
+  *
+  * Description
+  *
+  * @version 1.0 from 16-Oct-17
+  * @author 
+  */
+
+public class GuessGame extends JFrame {
+  // start attributes
+  // end attributes
+  
+  public GuessGame() { 
+    // Frame-Init
+    super();
+    setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+    int frameWidth = 300; 
+    int frameHeight = 300;
+    setSize(frameWidth, frameHeight);
+    Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
+    int x = (d.width - getSize().width) / 2;
+    int y = (d.height - getSize().height) / 2;
+    setLocation(x, y);
+    setTitle("GuessGame");
+    setResizable(false);
+    Container cp = getContentPane();
+    cp.setLayout(null);
+    // start components
+    
+    // end components
+    
+    setVisible(true);
+  } // end of public GuessGame
+  
+  // start methods
+  
+  public static void main(String[] args) {
+    new GuessGame();
+  } // end of main
+  
+  // end methods
+} // end of class GuessGame
